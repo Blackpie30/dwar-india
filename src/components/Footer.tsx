@@ -4,7 +4,6 @@ import React from "react";
 import {
   ShieldCheck,
   Phone,
-  MapPin,
   ArrowUp,
   FileCheck,
 } from "lucide-react";
@@ -99,31 +98,19 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Col 3: Contact Desk */}
+          {/* Col 3: Direct Contact Desk */}
           <div className="lg:col-span-4 space-y-3">
             <p className="font-cinzel font-bold text-xs uppercase tracking-widest text-[var(--text-primary)]">
-              Factory Location & Contacts
+              Direct Factory Contacts
             </p>
-            <div className="space-y-2.5 text-xs sm:text-sm text-[var(--text-secondary)]">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#938275] shrink-0 mt-0.5" />
-                <span>
-                  Suket & Ramganjmandi Industrial Area, Kota, Rajasthan 326517
-                </span>
-              </div>
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#938275] shrink-0 mt-0.5" />
-                <span>
-                  Quarry Corridor, Bijoliya, Bhilwara District, Rajasthan 311602
-                </span>
-              </div>
+            <div className="space-y-3 text-xs sm:text-sm text-[var(--text-secondary)]">
               <div className="flex items-center gap-2 pt-1 font-mono font-bold text-[var(--text-primary)]">
                 <Phone className="w-4 h-4 text-[#938275] shrink-0" />
-                <a href="tel:+919828123281" className="hover:text-[#938275]">
+                <a href="tel:+919828123281" className="hover:text-[#938275] transition-colors">
                   +91 98281 23281
                 </a>
                 <span>|</span>
-                <a href="tel:+917852873116" className="hover:text-[#938275]">
+                <a href="tel:+917852873116" className="hover:text-[#938275] transition-colors">
                   +91 78528 73116
                 </a>
               </div>
@@ -133,7 +120,7 @@ export const Footer: React.FC = () => {
                   href="https://instagram.com/dwar_india_official"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[var(--text-primary)] font-medium"
+                  className="hover:text-[var(--text-primary)] font-medium transition-colors"
                 >
                   @dwar_india_official
                 </a>
