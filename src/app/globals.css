@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+:root {
+  /* Uploaded Palette: SOFT Warm Architectural Stone */
+  --stone-alabaster: #E4E2DC;
+  --stone-sand: #C9BFB2;
+  --stone-warm: #C5BCB1;
+  --stone-taupe: #B9ADA2;
+  --stone-umber: #938275;
+}
+
+/* Light Theme Variables (Natural Soft Stone) */
+html.light {
+  --bg-primary: #F8F7F4;
+  --bg-secondary: #EFECE6;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F6F3EE;
+  --bg-card-subtle: rgba(255, 255, 255, 0.9);
+  --text-primary: #1C1815;
+  --text-secondary: #574D44;
+  --text-muted: #82756A;
+  --border-subtle: rgba(147, 130, 117, 0.22);
+  --border-hover: rgba(147, 130, 117, 0.5);
+  --glass-nav: rgba(248, 247, 244, 0.92);
+  --pill-bg: #EAE6DF;
+}
+
+/* Dark Theme Variables (Luxury Obsidian & Warm Slate) */
+html.dark, :root {
+  --bg-primary: #121110;
+  --bg-secondary: #181715;
+  --bg-card: #1C1A17;
+  --bg-card-hover: #262420;
+  --bg-card-subtle: rgba(28, 26, 23, 0.85);
+  --text-primary: #F4F2EC;
+  --text-secondary: #C5BCB1;
+  --text-muted: #9E9388;
+  --border-subtle: rgba(201, 191, 178, 0.16);
+  --border-hover: rgba(228, 226, 220, 0.45);
+  --glass-nav: rgba(18, 17, 16, 0.92);
+  --pill-bg: #1F1D1A;
+}
+
+* {
+  border-color: var(--border-subtle);
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-jakarta), sans-serif;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--stone-sand);
+  color: #121110;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--stone-taupe);
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--stone-umber);
+}
+
+/* Typography Utility Classes */
+.font-cinzel {
+  font-family: var(--font-cinzel), serif;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair), serif;
+}
+
+.font-jakarta {
+  font-family: var(--font-jakarta), sans-serif;
+}
+
+/* Luxury Soft Stone Text Gradients with Safe Fallbacks */
+.soft-stone-gradient-text {
+  color: #E4E2DC;
+  background: linear-gradient(135deg, #FFFFFF 0%, #E4E2DC 35%, #C9BFB2 75%, #938275 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+html.dark .soft-stone-gradient-text {
+  color: #E4E2DC;
+  background: linear-gradient(135deg, #FFFFFF 0%, #E4E2DC 35%, #C9BFB2 75%, #938275 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.light .soft-stone-gradient-text {
+  color: #1C1815;
+  background: linear-gradient(135deg, #1C1815 0%, #4D4238 40%, #82756A 80%, #938275 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-text {
+  color: #E8D39E;
+  background: linear-gradient(135deg, #FFF6E0 0%, #E8D39E 35%, #C5A059 70%, #938275 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* 3D Character Initial Hidden State to prevent glitched initial stacking */
+.intro-char {
+  opacity: 0;
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.reveal-char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* Glassmorphism Classes Adaptable to Theme */
+.glass-panel {
+  background: var(--bg-card-subtle);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glass-panel:hover {
+  border-color: var(--border-hover);
+}
+
+.glass-panel-warm {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Noise Pattern */
+.noise-bg {
+  background-image: radial-gradient(rgba(147, 130, 117, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* SaaS Marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 25s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
