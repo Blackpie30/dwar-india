@@ -223,13 +223,13 @@ export const Hero3D: React.FC = () => {
             </span>
           </div>
 
-          {/* Main Hero Product Headline */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-cinzel font-bold text-[var(--text-primary)] tracking-tight leading-[1.25] mb-5">
+          {/* Primary H1 Headline for SEO & Crawlers */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-cinzel font-bold text-[var(--text-primary)] tracking-tight leading-[1.25] mb-5">
             Natural Stone Door Frames & Slabs That{" "}
             <span className="block mt-1 soft-stone-gradient-text">
               Last For Generations.
             </span>
-          </h2>
+          </h1>
 
           {/* Easy-to-understand Description */}
           <p className="text-sm sm:text-base text-[var(--text-secondary)] font-normal leading-relaxed max-w-2xl mb-8">

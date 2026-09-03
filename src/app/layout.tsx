@@ -38,11 +38,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://dwarindia.com"),
   title: {
-    default: "DWAR INDIA | Natural Stone Door Frames (Chokhats) & Slabs Manufacturer",
+    default: "DWAR INDIA | Natural Stone Door Frames & Slabs",
     template: "%s | DWAR INDIA",
   },
   description:
-    "Official Rajasthan manufacturer of 100% termite-proof natural stone door frames (Chokhats), original Kota Stone flooring slabs, and high-load Bijoliya roofing slabs. Direct factory dispatch with GST billing across India.",
+    "Rajasthan manufacturer of 100% termite-proof stone door frames (Chokhats), Kota stone flooring, and Bijoliya slabs. Direct factory supply across India.",
   keywords: [
     "Dwar India",
     "Stone Chokhat",
@@ -74,15 +74,11 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/",
-    languages: {
-      "en-IN": "https://dwarindia.com",
-      "hi-IN": "https://dwarindia.com",
-    },
   },
   openGraph: {
-    title: "DWAR INDIA | Natural Stone Door Frames (Chokhats) & Slabs",
+    title: "DWAR INDIA | Natural Stone Door Frames & Slabs",
     description:
-      "Direct Rajasthan manufacturer of 100% termite-proof natural stone door frames (Chokhats), original Kota Stone flooring slabs, and strong Bijoliya roofing slabs. 100+ years lifespan.",
+      "Direct Rajasthan manufacturer of 100% termite-proof stone door frames (Chokhats), Kota stone flooring slabs, and Bijoliya roofing slabs. 100+ years lifespan.",
     url: "https://dwarindia.com",
     siteName: "DWAR INDIA",
     locale: "en_IN",
@@ -98,9 +94,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DWAR INDIA | Natural Stone Door Frames (Chokhats) & Slabs",
+    title: "DWAR INDIA | Natural Stone Door Frames & Slabs",
     description:
-      "Direct Rajasthan manufacturer of 100% termite-proof natural stone door frames (Chokhats), original Kota Stone flooring slabs, and strong Bijoliya roofing slabs.",
+      "Direct Rajasthan manufacturer of 100% termite-proof stone door frames (Chokhats), Kota stone flooring slabs, and Bijoliya roofing slabs.",
     creator: "@dwar_india_official",
     images: ["/twitter-image"],
   },

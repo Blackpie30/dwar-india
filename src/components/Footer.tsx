@@ -67,9 +67,9 @@ export const Footer: React.FC = () => {
 
           {/* Col 2: Quick Links */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="font-cinzel font-bold text-xs uppercase tracking-widest text-[var(--text-primary)]">
+            <p className="font-cinzel font-bold text-xs uppercase tracking-widest text-[var(--text-primary)]">
               Stone Products
-            </h4>
+            </p>
             <ul className="space-y-2 text-xs sm:text-sm text-[var(--text-secondary)]">
               <li>
                 <a href="#products" className="hover:text-[var(--text-primary)] transition-colors">
@@ -101,9 +101,9 @@ export const Footer: React.FC = () => {
 
           {/* Col 3: Contact Desk */}
           <div className="lg:col-span-4 space-y-3">
-            <h4 className="font-cinzel font-bold text-xs uppercase tracking-widest text-[var(--text-primary)]">
+            <p className="font-cinzel font-bold text-xs uppercase tracking-widest text-[var(--text-primary)]">
               Factory Location & Contacts
-            </h4>
+            </p>
             <div className="space-y-2.5 text-xs sm:text-sm text-[var(--text-secondary)]">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#938275] shrink-0 mt-0.5" />
