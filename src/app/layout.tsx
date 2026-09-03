@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Cinzel, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { StructuredData } from "@/components/StructuredData";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -138,6 +139,7 @@ export default function RootLayout({
       </head>
       <body className="bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased selection:bg-[#C9BFB2] selection:text-[#121110] min-h-screen">
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
