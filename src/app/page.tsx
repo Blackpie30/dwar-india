@@ -8,6 +8,7 @@ import { ProductVault } from "@/components/ProductVault";
 import { Craftsmanship } from "@/components/Craftsmanship";
 import { GsapStoneTimeline } from "@/components/GsapStoneTimeline";
 import { StoneStackShowcase } from "@/components/StoneStackShowcase";
+import { FAQ } from "@/components/FAQ";
 import { CorporateTrust } from "@/components/CorporateTrust";
 import { Footer } from "@/components/Footer";
 import { CustomCursor } from "@/components/CustomCursor";
@@ -56,7 +57,10 @@ export default function Home() {
         {/* 6. React Bits Pro Scroll Stack Card Pinning */}
         <StoneStackShowcase />
 
-        {/* 7. Corporate Credentials & Legal Trust */}
+        {/* 7. Comprehensive Search-Optimized FAQ Section */}
+        <FAQ />
+
+        {/* 8. Corporate Credentials & Legal Trust */}
         <CorporateTrust />
 
         {/* Architectural Luxury Footer */}

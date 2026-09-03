@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified,
-      changeFrequency: "weekly",
+      changeFrequency: "daily",
       priority: 1.0,
     },
     {
@@ -20,8 +20,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/#craftsmanship`,
       lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/#fabrication-journey`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/#faq`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.85,
     },
     {
       url: `${baseUrl}/#credentials`,
